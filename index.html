@@ -16,17 +16,18 @@
 	<!-- DO NOT CHANGE ANYTHING ABOVE THIS LINE-->
 
 	<!-- Javascript Framework (e.g., vue.js) (ADD HERE) -->
+	<script src="https://vuejs.org/js/vue.js"></script>
 	
 	
 </head>
 
   <body>
-	<div class="container">
+	<div class="container" id="vue_app">
 
 	    <div class="header">
 		    
 	      <div class="container">
-	        <h1 id="app_title">%title%</h1>
+	        <h1 id="app_title">{{ title }}</h1>
 	      </div>
 	      
 	    </div>
@@ -60,8 +61,8 @@
 
 	    <div class="footer">
 	      <div class="container">
-			<a id="github" class="btn btn-lg btn-warning">
-				<i class="fa fa-lg fa-github pull-left" aria-hidden="true"></i>%owner% %github%
+			<a id="github" class="btn btn-lg btn-warning" v-bind:href="github">
+				<i class="fa fa-lg fa-github pull-left" aria-hidden="true"></i>{{owner}}
 	  		</a>
 	      </div>
 	    </div>
