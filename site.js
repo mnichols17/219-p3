@@ -82,6 +82,9 @@ const vue_app = new Vue({
                               break;
                   }
                   return `${month} ${dateArray[2]}, ${dateArray[0]}`;
+            },
+            timeText: function(minutes){
+                  return `${(Math.floor(minutes/60))}h ${minutes%60}m`;
             }
       }
 })
