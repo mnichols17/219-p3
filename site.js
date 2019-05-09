@@ -83,8 +83,15 @@ const vue_app = new Vue({
                   }
                   return `${month} ${dateArray[2]}, ${dateArray[0]}`;
             },
-            timeText: function(minutes){
+            timeText: function(minutes) {
                   return `${(Math.floor(minutes/60))}h ${minutes%60}m`;
+            },
+            like: function(index) {
+                  this.movies[index].likes++;
+            }
+            ,
+            dislike: function(index) {
+                  this.movies[index].dislikes--;
             }
       }
 })

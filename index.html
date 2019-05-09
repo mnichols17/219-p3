@@ -38,7 +38,7 @@
 	      <div class="container">
 
 	        <div class="col-md-6"> 
-	            <div class="thumbnail" v-for="movie in movies">
+	            <div class="thumbnail" v-for="(movie,index) in movies">
 
 						<img class="poster" :src="movie.posters[0]" />
 
@@ -51,8 +51,8 @@
 						<p class="websites">Websites: <a>{{movie.imdb}}</a> | <a>{{movie.website}}</a></p>
 						
 			            <div class="social">
-			              <p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i>{{movie.likes}}</p>
-			              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i>{{movie.dislikes}}</p>
+			              <p class="likes" @click="like(index)"><i class="fa fa-thumbs-up" aria-hidden="true"></i>{{movie.likes}}</p>
+			              <p class="dislikes" @click="dislike(index)"><i class="fa fa-thumbs-down" aria-hidden="true"></i>{{movie.dislikes}}</p>
 			            </div>
 	            </div> 
 	        </div>
