@@ -92,6 +92,13 @@ const vue_app = new Vue({
             ,
             dislike: function(index) {
                   this.movies[index].dislikes--;
+            },
+            posterClick: function(index) {
+                  this.movies[index].posterindex++;
+
+                  if(this.movies[index].posterindex >= this.movies[index].posters.length){
+                        this.movies[index].posterindex = 0;
+                  }
             }
       }
 })
