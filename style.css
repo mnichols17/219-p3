@@ -96,9 +96,16 @@ body {
     color: #ffffff;
 }
 
-.likes :hover {
+.likes:hover {
     background: #9edd87;
     color: #008700;
+    transition: background-color 500ms linear;
+}
+
+.dislikes:hover {
+    background: #fdd6d6;
+    color: #F65A5B;
+    transition: background-color 500ms linear;
 }
 
 .dislikes {
