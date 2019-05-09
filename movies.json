@@ -68,5 +68,47 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "Apollo 13",
+            "iscore": 7.6,
+            "rating": "PG",
+            "runtime": 140,
+            "released": [1995, 6, 30],
+            "country": "USA",
+            "posters": ["img/apollo13.jpg", "img/apollo13_2.jpg", "img/apollo13_3.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0112384",
+            "website": "https://en.wikipedia.org/wiki/Apollo_13_(film)",
+            "likes": 981,
+            "dislikes": 375,
+            "posterindex": 0
+      },
+      {
+            "title": "Back to the Future",
+            "iscore": 8.5,
+            "rating": "PG",
+            "runtime": 116,
+            "released": [1985, 7, 3],
+            "country": "USA",
+            "posters": ["img/b2tf.jpg", "img/b2tf_2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0088763",
+            "website": "https://en.wikipedia.org/wiki/Back_to_the_Future",
+            "likes": 1955,
+            "dislikes": 1005,
+            "posterindex": 0
+      },
+      {
+            "title": "2001: A Space Odyssey",
+            "iscore": 8.3,
+            "rating": "G",
+            "runtime": 149,
+            "released": [1968, 4, 3],
+            "country": "USA",
+            "posters": ["img/2001.jpg", "img/2001_2.jpg", "img/2001_3.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0088763",
+            "website": "https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(film)",
+            "likes": 2001,
+            "dislikes": 830,
+            "posterindex": 0
       }
 ]
